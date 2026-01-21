@@ -1,9 +1,10 @@
 <template>
-  <Home />
+  <Header />
+  <router-view />
 </template>
 
 <script setup>
-import Home from './page/Home.vue'
+  import Header from './components/Header.vue'
 </script>
 
 <style>
