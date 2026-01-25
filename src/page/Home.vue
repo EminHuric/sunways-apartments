@@ -13,12 +13,15 @@
         </button>
         </router-link>
       </div>
+      <onama />
       <img src="/palm.png" alt="Palma" class="hero-palm" />
+      <img src="/palm.png" alt="Palma" class="hero-palm1" />
     </section>
   </div>
 </template>
 
 <script setup>
+  import onama from '../components/onama.vue';
 </script>
 
 <style scoped>
@@ -64,9 +67,18 @@
 
 .hero-palm {
   position: absolute;
-  bottom: 0;
-  right: 20px;
-  height: 150px;
+  top: 80%;
+  right: 50px;
+  height: 300px;
+  width: 500px;
+}
+.hero-palm1 {
+  position: absolute;
+  top: 80%;
+  left: 50px;
+  height: 300px;
+  width: 500px;
+  transform: rotate(142deg);
 }
 
 /* Content sekcija */
