@@ -7,7 +7,7 @@
       method="POST"
     >
       <!-- Sakrijeni input za redirect posle slanja -->
-      <input type="hidden" name="_next" value="https://sunways-apartments.vercel.app/hvala" />
+      <input type="hidden" name="_next" value="https://sunways-apartments.vercel.app" />
       <input type="hidden" name="_captcha" value="false" />
 
       <input type="text" name="name" placeholder="Ime" required />
