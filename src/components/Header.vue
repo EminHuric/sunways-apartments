@@ -82,6 +82,9 @@ watch(isOpen, (value) => {
 </script>
 
 <style scoped>
+  .menu {
+    display: none;
+  }
 .header {
   border: 1px solid #f2e9d0;
   height: 70px;
@@ -180,7 +183,7 @@ watch(isOpen, (value) => {
     width: 70%;
     height: 100vh;
     background: #997e4f;
-    z-index: 2;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     padding-top: 80px;

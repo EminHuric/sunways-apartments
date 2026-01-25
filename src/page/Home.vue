@@ -3,6 +3,16 @@
     <!-- Hero sekcija -->
     <section class="hero">
       <img src="/sunways.png" alt="Sunways Apartments" class="hero-img" />
+      <div class="container">
+        <button class="btn">
+          Rezerviši sada
+        </button>
+        <router-link to="/galerija">
+          <button class="btn2">
+          Galerija
+        </button>
+        </router-link>
+      </div>
       <img src="/palm.png" alt="Palma" class="hero-palm" />
     </section>
   </div>
@@ -12,8 +22,31 @@
 </script>
 
 <style scoped>
+.btn {
+  height: 50px;
+  width: 140px;
+  font-size: 18px;
+  background-color: #997e4f;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.btn2 {
+  height: 50px;
+  width: 140px;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 40px;
+  border-color: #000000;
+  background: none;
+  font-weight: bold;
+  color: #997e4f;
+  
+}
+
 .home-page {
-  padding-top: 40px; /* odmak zbog header-a */
+  padding-top: 40px;
+  /* odmak zbog header-a */
   background-color: #f2e9d0;
 }
 
@@ -67,7 +100,7 @@
   padding: 20px;
   border-radius: 10px;
   width: 250px;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .feature h3 {

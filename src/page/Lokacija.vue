@@ -85,7 +85,7 @@
 .hero-text {
   position: relative;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-text h1 {
