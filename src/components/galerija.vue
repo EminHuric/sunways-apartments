@@ -89,7 +89,7 @@ const images = ref([
     height: 300px;
   }
   .gallery {
-    padding-left: 20px;
+    padding: 10px;
     margin-top: -50px;
   }
 }
