@@ -22,4 +22,15 @@
         margin: 20px auto;
         color: #554220;
     }
+    @media (max-width: 1200px) {
+        .txt {
+            width: 85%;
+            font-size: 26px;
+            margin-bottom: -80px;
+        }
+        .headline {
+            font-size: 24px;
+            margin-top: 60px;
+        }
+    }
 </style>

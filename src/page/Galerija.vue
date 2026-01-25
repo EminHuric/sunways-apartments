@@ -20,10 +20,12 @@
       <button class="next-btn" @click.stop="nextImage">›</button>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import Footer from '../components/Footer.vue'
 
 const images = [
   '/gallery/1.jpeg',

@@ -21,8 +21,13 @@
       Pošaljite upit i odgovorićemo vam u najkraćem mogućem roku.
     </p>
   </div>
+  <Footer />
 </template>
+<script setup>
 
+import Footer from '../components/Footer.vue';
+
+</script>
 <style scoped>
 .contact-form {
   max-width: 500px;

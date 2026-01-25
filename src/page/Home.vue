@@ -4,24 +4,39 @@
     <section class="hero">
       <img src="/sunways.png" alt="Sunways Apartments" class="hero-img" />
       <div class="container">
-        <button class="btn">
-          Rezerviši sada
-        </button>
+        <router-link to="/sobe">
+          <button class="btn">
+            Rezerviši sada
+          </button>
+        </router-link>
         <router-link to="/galerija">
           <button class="btn2">
-          Galerija
-        </button>
+            Galerija
+          </button>
         </router-link>
       </div>
       <onama />
       <img src="/palm.png" alt="Palma" class="hero-palm" />
       <img src="/palm.png" alt="Palma" class="hero-palm1" />
     </section>
+    <Pogodnosti />
+    <Galerija />
+    <Komentari />
+    <Footer />
+
+
+
+
   </div>
 </template>
 
 <script setup>
-  import onama from '../components/onama.vue';
+import onama from '../components/onama.vue';
+import Pogodnosti from '../components/pogodnosti.vue';
+import Galerija from '../components/galerija.vue';
+import Komentari from '../components/komentari.vue';
+import Footer from '../components/Footer.vue';
+
 </script>
 
 <style scoped>
@@ -34,6 +49,7 @@
   color: white;
   font-weight: bold;
 }
+
 .btn2 {
   height: 50px;
   width: 140px;
@@ -44,7 +60,7 @@
   background: none;
   font-weight: bold;
   color: #997e4f;
-  
+
 }
 
 .home-page {
@@ -72,6 +88,7 @@
   height: 300px;
   width: 500px;
 }
+
 .hero-palm1 {
   position: absolute;
   top: 80%;
@@ -125,7 +142,36 @@
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 2300px) {
+  .hero-palm {
+    margin-right: 0px;
+    height: 200px;
+    width: 350px;
+  }
+  .hero-palm1 {
+    margin-right: 0px;
+    height: 200px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1720px) {
+  .hero-palm {
+    margin-right: -80px;
+    height: 200px;
+    width: 400px;
+    transform: rotate(50deg);
+  }
+
+  .hero-palm1 {
+    margin-left: -80px;
+    height: 200px;
+    width: 400px;
+    transform: rotate(122deg);
+  }
+}
+
+@media (max-width: 1200px) {
   .features {
     flex-direction: column;
     align-items: center;
@@ -137,6 +183,14 @@
 
   .hero-palm {
     display: none;
+  }
+
+  .hero-palm1 {
+    display: none;
+  }
+
+  .btn2 {
+    margin-top: 60px;
   }
 }
 </style>

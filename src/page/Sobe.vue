@@ -64,10 +64,12 @@
     <p v-if="success" class="success">Poruka poslata! Hvala što ste nas kontaktirali.</p>
     <p v-if="error" class="error">Došlo je do greške. Pokušajte ponovo.</p>
   </section>
+  <Footer />
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import Footer from '../components/Footer.vue'
 
 const name = ref('')
 const email = ref('')
