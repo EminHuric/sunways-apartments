@@ -277,7 +277,7 @@ const sendEmail = async () => {
   text-align: center;
   margin-top: 15px;
 }
-</style>
+</style>e
 
 <style scoped>
 .apartments-page {
