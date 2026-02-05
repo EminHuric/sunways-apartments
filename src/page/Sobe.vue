@@ -80,7 +80,7 @@ const success = ref(false)
 const error = ref(false)
 
 const today = new Date()
-const minDate = today.toISOString().split('T')[0] // danasnji datum YYYY-MM-DD
+const minDate = today.toISOString().split('T')[0] 
 
 const sendEmail = async () => {
   if (dateTo.value < dateFrom.value) {
@@ -94,7 +94,7 @@ const sendEmail = async () => {
   formData.append('message', message.value)
   formData.append('dateFrom', dateFrom.value)
   formData.append('dateTo', dateTo.value)
-  formData.append('_captcha', 'false') // bez captcha
+  formData.append('_captcha', 'false') 
   formData.append('_next', window.location.href)
 
   const url = 'https://formsubmit.co/sunwaysapartments@gmail.com'
